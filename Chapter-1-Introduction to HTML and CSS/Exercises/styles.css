@@ -1,0 +1,31 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(207, 161, 96);
+    margin: max-content;
+    border: 10px;
+}
+
+.ingredients {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    width: max-content;
+}
+
+.ingredients h2 {
+    margin-top: auto;
+}
+
+.ingredients ul {
+    list-style-type: disc;
+    padding: auto;
+    margin: 0;
+}
+
+.ingredients li {
+    margin-bottom: 5px;
+}
