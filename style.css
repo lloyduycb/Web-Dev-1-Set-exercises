@@ -1,0 +1,50 @@
+body{
+    background-color: #ddd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    margin: auto;
+    gap: 10px;
+    display: flex;
+}
+.card{
+    background-color: black;
+    position: relative;
+    width: max-content;
+    border-radius: 20px;
+}
+
+.card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 0;
+    opacity: 0.1;
+    filter: blur(1px);
+    object-fit: cover;
+}
+
+.card:hover img{
+    opacity: 0.7;
+    filter: blur(0.5px);
+    transition: all;
+    transition: 100ms;
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    left:20px;
+    z-index: 10;
+}
+
+.card:hover .title{
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
