@@ -21,6 +21,7 @@ body {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
+    padding-top: 0;
 }
 
 
@@ -48,11 +49,13 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
+    text-align: center;
+
 }
 
 nav a:hover {
-    background-color: black;
-    padding: 10px;
+    /* background-color: black; */
+    /* padding: 10px; */
     border-radius: 10px;
     color: grey;
     transition: all 100ms;
@@ -64,13 +67,18 @@ nav ul ul {
     top: 100%;
     left: 0;
     border-radius: 0 0 5px 5px;
+    background-color: rgb(6, 33, 8);
+    padding: 15px;
+    margin: auto;
+    border-radius: 15px;
 }
 
 nav li:hover>ul {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 100%;
+    width: max-content;
+    transform: translateX(-25px);
 }
 
 nav ul ul li {
